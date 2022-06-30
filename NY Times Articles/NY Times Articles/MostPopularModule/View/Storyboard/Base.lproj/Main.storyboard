@@ -11,14 +11,29 @@
         <!--Most Popular Articles View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MostPopularArticlesViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MostPopularArticlesViewController" customModule="NY_Times_Articles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yyA-zy-QFJ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yyA-zy-QFJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mG9-ga-nue"/>
+                            <constraint firstItem="yyA-zy-QFJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qZh-QF-V7y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yyA-zy-QFJ" secondAttribute="trailing" id="rJB-9l-swN"/>
+                            <constraint firstAttribute="bottom" secondItem="yyA-zy-QFJ" secondAttribute="bottom" id="wV9-gL-qfb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eTO-Ld-A6v"/>
+                    <connections>
+                        <outlet property="tableView" destination="yyA-zy-QFJ" id="PWS-eN-qgw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,6 +61,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

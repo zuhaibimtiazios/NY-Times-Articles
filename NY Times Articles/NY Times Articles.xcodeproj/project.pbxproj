@@ -14,6 +14,9 @@
 		F9070869286E2E6F00DFEA5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9070868286E2E6F00DFEA5E /* Assets.xcassets */; };
 		F907086C286E2E6F00DFEA5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F907086A286E2E6F00DFEA5E /* LaunchScreen.storyboard */; };
 		F9070877286E2E6F00DFEA5E /* NY_Times_ArticlesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9070876286E2E6F00DFEA5E /* NY_Times_ArticlesTests.swift */; };
+		F907089E286E368F00DFEA5E /* MostPopularArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F907089C286E368F00DFEA5E /* MostPopularArticleTableViewCell.swift */; };
+		F907089F286E368F00DFEA5E /* MostPopularArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F907089D286E368F00DFEA5E /* MostPopularArticleTableViewCell.xib */; };
+		F90708A1286E37AA00DFEA5E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90708A0286E37AA00DFEA5E /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,9 @@
 		F907086D286E2E6F00DFEA5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9070872286E2E6F00DFEA5E /* NY Times ArticlesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NY Times ArticlesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9070876286E2E6F00DFEA5E /* NY_Times_ArticlesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NY_Times_ArticlesTests.swift; sourceTree = "<group>"; };
+		F907089C286E368F00DFEA5E /* MostPopularArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularArticleTableViewCell.swift; sourceTree = "<group>"; };
+		F907089D286E368F00DFEA5E /* MostPopularArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostPopularArticleTableViewCell.xib; sourceTree = "<group>"; };
+		F90708A0286E37AA00DFEA5E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +148,7 @@
 		F9070894286E2EE600DFEA5E /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				F90708A0286E37AA00DFEA5E /* Constants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -180,6 +187,8 @@
 		F9070899286E300B00DFEA5E /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				F907089C286E368F00DFEA5E /* MostPopularArticleTableViewCell.swift */,
+				F907089D286E368F00DFEA5E /* MostPopularArticleTableViewCell.xib */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -275,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F907086C286E2E6F00DFEA5E /* LaunchScreen.storyboard in Resources */,
+				F907089F286E368F00DFEA5E /* MostPopularArticleTableViewCell.xib in Resources */,
 				F9070869286E2E6F00DFEA5E /* Assets.xcassets in Resources */,
 				F9070867286E2E6E00DFEA5E /* Main.storyboard in Resources */,
 			);
@@ -294,7 +304,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F90708A1286E37AA00DFEA5E /* Constants.swift in Sources */,
 				F9070864286E2E6E00DFEA5E /* MostPopularArticlesViewController.swift in Sources */,
+				F907089E286E368F00DFEA5E /* MostPopularArticleTableViewCell.swift in Sources */,
 				F9070860286E2E6E00DFEA5E /* AppDelegate.swift in Sources */,
 				F9070862286E2E6E00DFEA5E /* SceneDelegate.swift in Sources */,
 			);
