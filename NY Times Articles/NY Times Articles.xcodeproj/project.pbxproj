@@ -28,7 +28,6 @@
 		F90708B4286E404B00DFEA5E /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90708B3286E404B00DFEA5E /* ThemeManager.swift */; };
 		F90708B6286E406F00DFEA5E /* Extension+UserDefualts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90708B5286E406F00DFEA5E /* Extension+UserDefualts.swift */; };
 		F90708B8286E408B00DFEA5E /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90708B7286E408B00DFEA5E /* Extension+UIViewController.swift */; };
-		F90708BD286E4F5200DFEA5E /* testview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90708BC286E4F5200DFEA5E /* testview.swift */; };
 		F90708BF286E53FD00DFEA5E /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90708BE286E53FD00DFEA5E /* LanguageManager.swift */; };
 		F9EB77E2286ECB68006EC148 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9EB77E4286ECB68006EC148 /* Localizable.strings */; };
 		F9EB77E7286ED235006EC148 /* Extension_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EB77E6286ED235006EC148 /* Extension_String.swift */; };
@@ -72,7 +71,6 @@
 		F90708B3286E404B00DFEA5E /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		F90708B5286E406F00DFEA5E /* Extension+UserDefualts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UserDefualts.swift"; sourceTree = "<group>"; };
 		F90708B7286E408B00DFEA5E /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
-		F90708BC286E4F5200DFEA5E /* testview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testview.swift; sourceTree = "<group>"; };
 		F90708BE286E53FD00DFEA5E /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		F90708C2286EC95200DFEA5E /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		F90708C3286EC95200DFEA5E /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -262,7 +260,6 @@
 			children = (
 				F907089C286E368F00DFEA5E /* MostPopularArticleTableViewCell.swift */,
 				F907089D286E368F00DFEA5E /* MostPopularArticleTableViewCell.xib */,
-				F90708BC286E4F5200DFEA5E /* testview.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -476,7 +473,6 @@
 				F90708A4286E3BF200DFEA5E /* MostPopularArticlesViewModel.swift in Sources */,
 				F90708A1286E37AA00DFEA5E /* Constants.swift in Sources */,
 				F90708B6286E406F00DFEA5E /* Extension+UserDefualts.swift in Sources */,
-				F90708BD286E4F5200DFEA5E /* testview.swift in Sources */,
 				F90708AD286E3E3600DFEA5E /* Extension+UIView.swift in Sources */,
 				F90708AB286E3CBC00DFEA5E /* MostPopularArticleResponseModel.swift in Sources */,
 				F90708A9286E3C9100DFEA5E /* MostPopularArticlesService.swift in Sources */,
