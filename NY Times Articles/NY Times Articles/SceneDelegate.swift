@@ -10,20 +10,11 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
-
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
-        let settingManager = SettingManager(_languageManager: LanguageManager(), _ThemeManager: ThemeManager())        
-        settingManager.setTheme(isDark: settingManager.getThemeIsDark())
-        if !settingManager.isUserSetPreferredLanguage(){
-            settingManager.setAppLanguage(langCode: (NSLocale.current.languageCode == LanguageEnum.english.rawValue) ? .english : .arabic)
-        }else{
-            settingManager.setAppLanguage(langCode: (settingManager.getAppLanguage() == LanguageEnum.english.rawValue) ? .english : .arabic)
-        }
+        self.themeAndLanguageSettings()
         guard let _ = (scene as? UIWindowScene) else { return }
-
-        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -55,5 +46,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
 
+    
+    private func themeAndLanguageSettings() {
+        let settingManager = SettingManager(_languageManager: LanguageManager(), _ThemeManager: ThemeManager())
+        if settingManager.isUserSetPreferredThemeMode(){
+            settingManager.setTheme(isDark: settingManager.getThemeIsDark())
+        }else{
+            settingManager.setTheme(isDark: (UIScreen.main.traitCollection.userInterfaceStyle.rawValue == 1) ? false : true )
+        }
+        if !settingManager.isUserSetPreferredLanguage(){
+            settingManager.setAppLanguage(langCode: (NSLocale.current.languageCode == LanguageEnum.english.rawValue) ? .english : .arabic)
+        }else{
+            settingManager.setAppLanguage(langCode: (settingManager.getAppLanguage() == LanguageEnum.english.rawValue) ? .english : .arabic)
+        }
+    }
 }
 

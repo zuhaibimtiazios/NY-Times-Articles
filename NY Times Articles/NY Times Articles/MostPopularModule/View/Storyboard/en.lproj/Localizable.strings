@@ -16,3 +16,9 @@
 "lightModeKey" = "Light Mode";
 "EnglishKey" = "English";
 "arabicKey" = "Arabic";
+
+"Invalid Data error" = "Invalid data error";
+"JSON Parsing Failure error" = "Data parsing failure error";
+"No internet connection" = "No internet connection";
+"serialization print for debug failed" = "Serialization print for debug failed";
+"invalidUrlErrorKey" = "Invalid Url";

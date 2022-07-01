@@ -85,4 +85,9 @@ extension MostPopularArticlesViewModel: SettingProtocol{
     func setTheme(isDark: Bool) {
         self.settingManager.setTheme(isDark: isDark)
     }
+    
+    func isUserSetPreferredThemeMode() -> Bool {
+        self.settingManager.isUserSetPreferredThemeMode()
+    }
+    
 }

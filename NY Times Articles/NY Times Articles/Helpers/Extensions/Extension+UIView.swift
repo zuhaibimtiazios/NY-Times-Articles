@@ -33,19 +33,5 @@ extension UIView {
         self.viewWithTag(-888754)?.removeFromSuperview()
     }
     
-    func embedView(_ childView: UIView) {
-        self.addSubview(childView)
-        childView.translatesAutoresizingMaskIntoConstraints = false
-        
-        let views = ["containerView": self, "view": childView]
-        let horizontalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[view]-0-|", options: [], metrics: nil, views: views)
-        let verticalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[view]-0-|", options: [], metrics: nil, views: views)
-        
-        self.addConstraints(horizontalConstraints)
-        self.addConstraints(verticalConstraints)
-        
-        self.layoutIfNeeded()
-        self.clipsToBounds = true
-    }
 }
 

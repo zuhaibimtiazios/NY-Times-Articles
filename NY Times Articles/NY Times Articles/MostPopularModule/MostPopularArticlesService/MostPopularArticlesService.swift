@@ -37,7 +37,7 @@ class MostPopularArticlesService: ApiServiceProtocol, MostPopularArticlesService
         }
         
         guard let url = URL(string: urlString) else{
-            throw APIError.requestFailed(description: "Invalid Url")
+            throw APIError.requestFailed(description: ApiErrorLocalizationKeyEnum.invalidUrlErrorKey.rawValue)
         }
         
         let request = URLRequest(url: url)

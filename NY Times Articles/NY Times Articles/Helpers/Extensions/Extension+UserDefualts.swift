@@ -12,5 +12,6 @@ extension UserDefaults{
         case isDarkMode
         case lang
         case isSetPreferredLanguage
+        case isSetPreferredTheme
     }
 }

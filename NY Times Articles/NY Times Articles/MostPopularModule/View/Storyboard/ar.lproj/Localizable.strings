@@ -16,3 +16,10 @@
 "lightModeKey" = "وضع الضوء";
 "EnglishKey" = "English";
 "arabicKey" = "العربية";
+
+"Invalid Data error" = "خطأ بيانات غير صالح";
+"JSON Parsing Failure error" = "خطأ في تحليل البيانات";
+"No internet connection" = "لا يوجد اتصال بالإنترنت";
+"serialization print for debug failed" = "فشل طباعة التسلسل للتصحيح";
+"invalidUrlErrorKey" = "URL غير صالح";
+

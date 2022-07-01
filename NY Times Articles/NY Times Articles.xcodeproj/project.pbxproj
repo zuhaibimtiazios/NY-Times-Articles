@@ -29,6 +29,8 @@
 		F90708B6286E406F00DFEA5E /* Extension+UserDefualts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90708B5286E406F00DFEA5E /* Extension+UserDefualts.swift */; };
 		F90708B8286E408B00DFEA5E /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90708B7286E408B00DFEA5E /* Extension+UIViewController.swift */; };
 		F90708BF286E53FD00DFEA5E /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90708BE286E53FD00DFEA5E /* LanguageManager.swift */; };
+		F94EB0BA286F5EDC00D55E33 /* NY_Times_MostPopularViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94EB0B9286F5EDC00D55E33 /* NY_Times_MostPopularViewModel.swift */; };
+		F94EB0BC286F5F1800D55E33 /* SettingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94EB0BB286F5F1800D55E33 /* SettingManager.swift */; };
 		F9EB77E2286ECB68006EC148 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9EB77E4286ECB68006EC148 /* Localizable.strings */; };
 		F9EB77E7286ED235006EC148 /* Extension_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EB77E6286ED235006EC148 /* Extension_String.swift */; };
 /* End PBXBuildFile section */
@@ -75,6 +77,8 @@
 		F90708C2286EC95200DFEA5E /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		F90708C3286EC95200DFEA5E /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		F90708C4286ECA4C00DFEA5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		F94EB0B9286F5EDC00D55E33 /* NY_Times_MostPopularViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NY_Times_MostPopularViewModel.swift; sourceTree = "<group>"; };
+		F94EB0BB286F5F1800D55E33 /* SettingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingManager.swift; sourceTree = "<group>"; };
 		F9EB77E3286ECB68006EC148 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F9EB77E5286ECB6C006EC148 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F9EB77E6286ED235006EC148 /* Extension_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_String.swift; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				F9070876286E2E6F00DFEA5E /* NY_Times_ArticlesTests.swift */,
+				F94EB0B9286F5EDC00D55E33 /* NY_Times_MostPopularViewModel.swift */,
 			);
 			path = "NY Times ArticlesTests";
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 			children = (
 				F90708B3286E404B00DFEA5E /* ThemeManager.swift */,
 				F90708BE286E53FD00DFEA5E /* LanguageManager.swift */,
+				F94EB0BB286F5F1800D55E33 /* SettingManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -475,6 +481,7 @@
 				F90708B6286E406F00DFEA5E /* Extension+UserDefualts.swift in Sources */,
 				F90708AD286E3E3600DFEA5E /* Extension+UIView.swift in Sources */,
 				F90708AB286E3CBC00DFEA5E /* MostPopularArticleResponseModel.swift in Sources */,
+				F94EB0BC286F5F1800D55E33 /* SettingManager.swift in Sources */,
 				F90708A9286E3C9100DFEA5E /* MostPopularArticlesService.swift in Sources */,
 				F9EB77E7286ED235006EC148 /* Extension_String.swift in Sources */,
 				F9070864286E2E6E00DFEA5E /* MostPopularArticlesViewController.swift in Sources */,
@@ -493,6 +500,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9070877286E2E6F00DFEA5E /* NY_Times_ArticlesTests.swift in Sources */,
+				F94EB0BA286F5EDC00D55E33 /* NY_Times_MostPopularViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
