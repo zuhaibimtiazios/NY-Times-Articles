@@ -1,7 +1,7 @@
 # NY-Times-Most Viewed Articles
    <p>New-York-Time's most popular articles using MVVM approach. A design pattern help to have the separation of concerns & batter testability.</p>
     
-# Screenshots:\
+# Screenshots:
 <p float="left">
     <img width="150" height="300" alt="Screen Shot 2022-07-01 at 10 47 52 PM" src="https://user-images.githubusercontent.com/108489888/176949502-7efd3eb0-f9f2-4804-b5f4-15a925dae999.png">
     <img width="150" height="300" alt="Screen Shot 2022-07-01 at 10 47 52 PM" src="https://user-images.githubusercontent.com/108489888/176950784-a6b00a4b-35f6-4ad1-8738-4a8b2aace36b.png">
@@ -10,8 +10,6 @@
     <img width="150" height="300" alt="Screen Shot 2022-07-01 at 10 47 52 PM" src="https://user-images.githubusercontent.com/108489888/176951571-5a205494-53ff-4f9c-8646-7bdadcdb2147.png">
     <img width="150" height="300" alt="Screen Shot 2022-07-01 at 10 47 52 PM" src="https://user-images.githubusercontent.com/108489888/176951586-3b1c29b4-0bd9-4b42-8b4d-6681a9489b9a.png">
 </p>
-
-
 
 # Requirements to run the code:
    <li>macOS 11.3 Big Sur or later.</li>
@@ -40,5 +38,7 @@
   <li>Add a support for RTL layout. i.e Arabic language.</li>
   <li>Dark and Light Model Themes.</li>
   <li>App remember the user preferred settings(theme/language).</li>
+  <li>Some UI changes to make it look better.</li>
+
 
 
