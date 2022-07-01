@@ -20,18 +20,61 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rV9-N0-QFF">
+                                <rect key="frame" x="50" y="396.5" width="314" height="103"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6M-uI-NJ0">
+                                        <rect key="frame" x="12" y="12" width="290" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="250" constant="30" id="0pU-JF-RrN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHm-UA-V9Q">
+                                        <rect key="frame" x="0.0" y="63" width="314" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="6Z7-X2-SB3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Try Again!" image="arrowshape.turn.up.left.circle" catalog="system"/>
+                                        <connections>
+                                            <action selector="actionTryAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j9u-3f-Jdk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="KHm-UA-V9Q" firstAttribute="leading" secondItem="rV9-N0-QFF" secondAttribute="leading" id="0Py-Ph-amd"/>
+                                    <constraint firstAttribute="trailing" secondItem="B6M-uI-NJ0" secondAttribute="trailing" constant="12" id="DTD-I1-yEc"/>
+                                    <constraint firstAttribute="trailing" secondItem="KHm-UA-V9Q" secondAttribute="trailing" id="ENa-XL-OQf"/>
+                                    <constraint firstItem="B6M-uI-NJ0" firstAttribute="leading" secondItem="rV9-N0-QFF" secondAttribute="leading" constant="12" id="aIL-8F-95s"/>
+                                    <constraint firstAttribute="bottom" secondItem="KHm-UA-V9Q" secondAttribute="bottom" constant="5" id="o8d-oZ-zE8"/>
+                                    <constraint firstItem="B6M-uI-NJ0" firstAttribute="top" secondItem="rV9-N0-QFF" secondAttribute="top" constant="12" id="xBp-Dn-1Qy"/>
+                                    <constraint firstItem="KHm-UA-V9Q" firstAttribute="top" secondItem="B6M-uI-NJ0" secondAttribute="bottom" constant="10" id="yKk-6Q-XIS"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rV9-N0-QFF" secondAttribute="trailing" constant="50" id="2BE-Ha-o1f"/>
+                            <constraint firstItem="rV9-N0-QFF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Rfw-oC-OjV"/>
                             <constraint firstItem="yyA-zy-QFJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mG9-ga-nue"/>
                             <constraint firstItem="yyA-zy-QFJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qZh-QF-V7y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yyA-zy-QFJ" secondAttribute="trailing" id="rJB-9l-swN"/>
+                            <constraint firstItem="rV9-N0-QFF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vl3-12-OeO"/>
                             <constraint firstAttribute="bottom" secondItem="yyA-zy-QFJ" secondAttribute="bottom" id="wV9-gL-qfb"/>
+                            <constraint firstItem="rV9-N0-QFF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yvn-Zv-Z3x"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eTO-Ld-A6v"/>
                     <connections>
+                        <outlet property="btnTryAgain" destination="KHm-UA-V9Q" id="FwP-7H-hcg"/>
+                        <outlet property="networkErrorLabel" destination="B6M-uI-NJ0" id="vWn-Rf-Vgb"/>
+                        <outlet property="networkUnavailableView" destination="rV9-N0-QFF" id="WTt-AZ-EsX"/>
                         <outlet property="tableView" destination="yyA-zy-QFJ" id="PWS-eN-qgw"/>
                     </connections>
                 </viewController>
@@ -59,6 +102,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrowshape.turn.up.left.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

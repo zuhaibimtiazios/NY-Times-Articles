@@ -7,11 +7,6 @@
 
 import Foundation
 
-struct Constants{
-    static let pullToRefresh = "Reloading"
-    static let internetConnectionError = "Please check your internet connection"
-}
-
 struct NYTApiKeyConstant{
     static let nyTimesApiKey = "DDZ2Wry7ZEp6w8r7w30LZ4vL68xT7ibN"
 }
@@ -21,9 +16,11 @@ struct ApiConstant{
     static let baseUrl = "https://api.nytimes.com/svc/mostpopular/v2/"
 }
 
-enum themeNameEnum: String{
+enum settingsNameEnum: String{
     case lightMode = "Light Mode"
-    case darkMode = "Dark Mode"
+    case darkMode  = "Dark Mode"
+    case arabic    = "Arabic"
+    case english   = "English"
 }
 
 enum imageNameEnum: String{

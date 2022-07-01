@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  NY Times Articles
+
+  Created by Zuhaib Imtiaz on 7/1/22.
+  
+*/
+
+
+"navbarArticlekey" = "Articles";
+"pullToRefreshkey" = "Reloading";
+"searchkey" = "Search";
+"tryAgainKey" = "Try Again";
+"internetConnectKey" = "Please check your internet connection";
+"darkModeKey" = "Dark Mode";
+"lightModeKey" = "Light Mode";
+"EnglishKey" = "English";
+"arabicKey" = "Arabic";

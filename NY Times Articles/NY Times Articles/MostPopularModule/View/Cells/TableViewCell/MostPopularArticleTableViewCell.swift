@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MostPopularArticleTableViewCell: UITableViewCell {
     static let cell = "MostPopularArticleTableViewCell"
@@ -16,6 +17,20 @@ class MostPopularArticleTableViewCell: UITableViewCell {
     @IBOutlet weak var byLineLabel: UILabel!
     @IBOutlet weak var publishedDateLabel: UILabel!
 
+    var cellModel : MostViewedCellViewModel? {
+        didSet{
+            self.titleLabel.text = cellModel?.title
+            self.byLineLabel.text = cellModel?.byLine
+            self.publishedDateLabel.text = cellModel?.PublishedDate
+            if let url = URL(string: cellModel?.avatar ?? ""){
+                self.articleImageView.sd_setImage(with: url, placeholderImage: UIImage(systemName: "photo.on.rectangle"))
+            }else{
+                self.articleImageView.backgroundColor = .gray
+                self.articleImageView.image = UIImage(systemName: "photo.on.rectangle")
+            }
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
