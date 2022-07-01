@@ -176,6 +176,7 @@ class MostPopularArticlesViewController: UIViewController {
     @objc func actionSearch(){
         if self.searchViewHeightConstraint.constant == 0 {
             self.searchViewHeightConstraint.constant = 50
+            self.searchTextField.becomeFirstResponder()
             UIView.animate(withDuration: 0.3) {
                 self.view.layoutIfNeeded()
             }
