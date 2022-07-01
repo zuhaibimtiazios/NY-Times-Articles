@@ -1,6 +1,7 @@
 # NY-Times-Most Viewed Articles
-    New-York-Time's most popular articles using MVVM approach. A design pattern help to have the separation of concerns & batter testability.
-# Screenshots:
+   <p>New-York-Time's most popular articles using MVVM approach. A design pattern help to have the separation of concerns & batter testability.</p>
+    
+# Screenshots:\
 <p float="left">
     <img width="150" height="300" alt="Screen Shot 2022-07-01 at 10 47 52 PM" src="https://user-images.githubusercontent.com/108489888/176949502-7efd3eb0-f9f2-4804-b5f4-15a925dae999.png">
     <img width="150" height="300" alt="Screen Shot 2022-07-01 at 10 47 52 PM" src="https://user-images.githubusercontent.com/108489888/176950784-a6b00a4b-35f6-4ad1-8738-4a8b2aace36b.png">
