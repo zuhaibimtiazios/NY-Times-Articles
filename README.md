@@ -1,4 +1,4 @@
-# NY-Times-Articles
+# NY-Times-Most Viewed Articles
     New-York-Time's most popular articles using MVVM approach. A design pattern help to have the separation of concerns & batter testability.
 # Screenshots:
 <p float="left">
