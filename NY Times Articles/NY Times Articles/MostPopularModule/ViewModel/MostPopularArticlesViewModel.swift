@@ -44,7 +44,7 @@ extension MostPopularArticlesViewModel: MostPopularArticlesServiceProtocol{
     @discardableResult
     func getArticles(with category: CategoryEnum, section: SectionEnum, and period: PeriodsEnum) async throws -> MostPopularArticleResponseModel? {
         do{
-            let response = try await self.apiService.getArticles(with: .mostviewedCategory, section: .allSection, and: .onePeriod)
+            let response = try await self.apiService.getArticles(with: category, section: section, and: period)
             if let articles = response?.results{
                 self.mostViewedArticles = articles
                 self.mostViewedArticlesMain = articles
