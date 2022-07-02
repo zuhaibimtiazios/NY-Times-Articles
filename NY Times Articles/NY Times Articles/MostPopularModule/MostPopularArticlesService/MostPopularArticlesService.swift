@@ -26,7 +26,7 @@ protocol MostPopularArticlesServiceProtocol {
     func getArticles(with category: CategoryEnum, section: SectionEnum, and period: PeriodsEnum) async throws -> MostPopularArticleResponseModel?
 }
 
-class MostPopularArticlesService: ApiServiceProtocol, MostPopularArticlesServiceProtocol{
+struct MostPopularArticlesService: ApiServiceProtocol, MostPopularArticlesServiceProtocol{
     
     
     func getArticles(with category: CategoryEnum, section: SectionEnum, and period: PeriodsEnum) async throws -> MostPopularArticleResponseModel? {

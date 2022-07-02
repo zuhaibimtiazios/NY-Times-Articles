@@ -44,10 +44,10 @@ extension ApiServiceProtocol {
         let (data, response) = try await URLSession.shared.data(for: request)
         
         guard let httpResponse = response as? HTTPURLResponse else {
-            throw APIError.requestFailed(description: "invalid response")
+            throw APIError.requestFailed(description: ApiErrorLocalizationKeyEnum.invalidDataApiErrorKey.rawValue)
         }
         guard httpResponse.statusCode == 200 else {
-            throw APIError.responseUnsuccessful(description: "status code \(httpResponse.statusCode)")
+            throw APIError.responseUnsuccessful(description: "\(httpResponse.statusCode)")
         }
         do {
             return try JSONDecoder().decode(type, from: data)

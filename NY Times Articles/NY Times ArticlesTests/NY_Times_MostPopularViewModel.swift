@@ -74,13 +74,13 @@ class NY_Times_MostPopularViewModel: XCTestCase {
 }
 
 
-class MockServiceForNoInternet: MostPopularArticlesServiceProtocol{
+struct MockServiceForNoInternet: MostPopularArticlesServiceProtocol{
     func getArticles(with category: CategoryEnum, section: SectionEnum, and period: PeriodsEnum) async throws -> MostPopularArticleResponseModel? {
         throw(APIError.noInternet)
     }
 }
 
-class MockServiceForInvalidUrl: MostPopularArticlesServiceProtocol{
+struct MockServiceForInvalidUrl: MostPopularArticlesServiceProtocol{
     func getArticles(with category: CategoryEnum, section: SectionEnum, and period: PeriodsEnum) async throws -> MostPopularArticleResponseModel? {
         throw(APIError.requestFailed(description: ApiErrorLocalizationKeyEnum.invalidUrlErrorKey.rawValue))
     }
