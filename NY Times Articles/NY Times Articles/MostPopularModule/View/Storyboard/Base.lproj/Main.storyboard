@@ -98,8 +98,8 @@
                         <constraints>
                             <constraint firstItem="2eb-vm-mSY" firstAttribute="centerX" secondItem="huf-ht-qeo" secondAttribute="centerX" id="2fF-ZL-Lnw"/>
                             <constraint firstItem="9E8-Do-Syr" firstAttribute="top" secondItem="u1Y-iG-ORN" secondAttribute="bottom" id="4iz-Fj-oFX"/>
-                            <constraint firstItem="ho0-Zh-b9R" firstAttribute="trailing" secondItem="9E8-Do-Syr" secondAttribute="trailing" id="DTg-bq-b98"/>
-                            <constraint firstItem="9E8-Do-Syr" firstAttribute="leading" secondItem="ho0-Zh-b9R" secondAttribute="leading" id="DX4-kB-fq6"/>
+                            <constraint firstAttribute="trailing" secondItem="9E8-Do-Syr" secondAttribute="trailing" id="DTg-bq-b98"/>
+                            <constraint firstItem="9E8-Do-Syr" firstAttribute="leading" secondItem="huf-ht-qeo" secondAttribute="leading" id="DX4-kB-fq6"/>
                             <constraint firstItem="2eb-vm-mSY" firstAttribute="leading" secondItem="ho0-Zh-b9R" secondAttribute="leading" constant="50" id="GHb-Yj-nlh"/>
                             <constraint firstItem="u1Y-iG-ORN" firstAttribute="leading" secondItem="ho0-Zh-b9R" secondAttribute="leading" id="SLo-rE-6vc"/>
                             <constraint firstItem="2eb-vm-mSY" firstAttribute="centerY" secondItem="huf-ht-qeo" secondAttribute="centerY" id="ggi-ND-7qU"/>

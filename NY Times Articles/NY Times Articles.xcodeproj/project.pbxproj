@@ -32,7 +32,7 @@
 		F94EB0BA286F5EDC00D55E33 /* NY_Times_MostPopularViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94EB0B9286F5EDC00D55E33 /* NY_Times_MostPopularViewModel.swift */; };
 		F94EB0BC286F5F1800D55E33 /* SettingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94EB0BB286F5F1800D55E33 /* SettingManager.swift */; };
 		F9EB77E2286ECB68006EC148 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9EB77E4286ECB68006EC148 /* Localizable.strings */; };
-		F9EB77E7286ED235006EC148 /* Extension_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EB77E6286ED235006EC148 /* Extension_String.swift */; };
+		F9EB77E7286ED235006EC148 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EB77E6286ED235006EC148 /* Extension+String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +81,7 @@
 		F94EB0BB286F5F1800D55E33 /* SettingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingManager.swift; sourceTree = "<group>"; };
 		F9EB77E3286ECB68006EC148 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F9EB77E5286ECB6C006EC148 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
-		F9EB77E6286ED235006EC148 /* Extension_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_String.swift; sourceTree = "<group>"; };
+		F9EB77E6286ED235006EC148 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		FD58EFF67B0C3335F1B27AF6 /* Pods-NY Times Articles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NY Times Articles.release.xcconfig"; path = "Target Support Files/Pods-NY Times Articles/Pods-NY Times Articles.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -231,7 +231,7 @@
 				F90708AC286E3E3600DFEA5E /* Extension+UIView.swift */,
 				F90708B5286E406F00DFEA5E /* Extension+UserDefualts.swift */,
 				F90708B7286E408B00DFEA5E /* Extension+UIViewController.swift */,
-				F9EB77E6286ED235006EC148 /* Extension_String.swift */,
+				F9EB77E6286ED235006EC148 /* Extension+String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -483,7 +483,7 @@
 				F90708AB286E3CBC00DFEA5E /* MostPopularArticleResponseModel.swift in Sources */,
 				F94EB0BC286F5F1800D55E33 /* SettingManager.swift in Sources */,
 				F90708A9286E3C9100DFEA5E /* MostPopularArticlesService.swift in Sources */,
-				F9EB77E7286ED235006EC148 /* Extension_String.swift in Sources */,
+				F9EB77E7286ED235006EC148 /* Extension+String.swift in Sources */,
 				F9070864286E2E6E00DFEA5E /* MostPopularArticlesViewController.swift in Sources */,
 				F90708B8286E408B00DFEA5E /* Extension+UIViewController.swift in Sources */,
 				F907089E286E368F00DFEA5E /* MostPopularArticleTableViewCell.swift in Sources */,
